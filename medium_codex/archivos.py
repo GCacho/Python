@@ -5,6 +5,7 @@ def read():
             numbers.append(int(line))
         print(numbers)
 
+        
 def write():
     names = ["Facundo", "Miguel", "Pepe", "Christian", "Rocío"]
     with open("./archivos/names.txt", "w", encoding="utf-8") as f: #Modo "w" es para el modo de apertura para que no se sobreescriban con "a" se sobreescriven cada vez que corre el codigo
@@ -12,10 +13,11 @@ def write():
             f.write(name)
             f.write("\n")
 
-
+            
 def run(): 
     read()
     write()
 
+    
 if __name__ == "__main__":
     run()
