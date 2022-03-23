@@ -29,22 +29,16 @@ def run():
     numero_letras = len(palabra_azar) - 1 #Elimina el salto de linea
     blancos = list("-" * numero_letras)
     contador = 0
-    correcto = False
 
     while vidas > 0:
         elect=input("Ingresa una letra:\n---->")
         while contador < numero_letras: #cuenta las letras 
             print(palabra_azar[contador]) #Muestra letra por letra de la lista de palabra_azar
             if palabra_azar[contador] == elect: #Si la letra esta en la palabra 
-                letra_correcta = palabra_azar[contador] #Se guarda la letra correcta
-                blancos[contador] = letra_correcta
-                correcto = True
+                blancos[contador] = elect
+            contador += 1 #Contador hasta el final
+        contador = 0 #Para que pueda volver a empezar a buscar
 
-            contador = contador + 1 #Contador hasta el final
-        if correcto == False:
-            vidas = vidas - 1
-
-        print(letra_correcta)
         print(blancos)
         print(vidas)
     
