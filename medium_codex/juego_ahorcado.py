@@ -1,14 +1,8 @@
 import random
+import os
 from random import randint
 from select import select
 
-# def lista_palabras():
-#     palabra = []
-#     with open("./archivos/data.txt", "r", encoding="utf-8") as f:
-#         for line in f:
-#             palabra.append(line)
-#         cantidad_palabras = len(palabra)
-#         return cantidad_palabras
 
 
 def run():
@@ -31,16 +25,21 @@ def run():
     contador = 0
 
     while vidas > 0:
+        correcto = False
         elect=input("Ingresa una letra:\n---->")
         while contador < numero_letras: #cuenta las letras 
-            print(palabra_azar[contador]) #Muestra letra por letra de la lista de palabra_azar
-            if palabra_azar[contador] == elect: #Si la letra esta en la palabra 
-                blancos[contador] = elect
+            #print(palabra_azar[contador]) #Muestra letra por letra de la lista de palabra_azar
+            if palabra_azar[contador] == elect: #Si la letra elegida esta en la palabra 
+                blancos[contador] = elect #El guion se remplaza por la letra
+                correcto = True #gurarda el correcto
             contador += 1 #Contador hasta el final
         contador = 0 #Para que pueda volver a empezar a buscar
 
+        if correcto != True:
+            vidas -= 1
+
         print(blancos)
-        print(vidas)
+        print("Vidas restantes = " + str(vidas))
     
 
 
