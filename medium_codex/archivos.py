@@ -8,7 +8,7 @@ def read():
         
 def write():
     names = ["Facundo", "Miguel", "Pepe", "Christian", "Rocío"]
-    with open("./archivos/names.txt", "w", encoding="utf-8") as f: #Modo "w" es para el modo de apertura para que no se sobreescriban con "a" se sobreescriven cada vez que corre el codigo
+    with open("./archivos/names.txt", "a", encoding="utf-8") as f: #Modo "w" es para el modo de apertura para que no se sobreescriban con "a" se sobreescriven cada vez que corre el codigo
         for name in names:
             f.write(name)
             f.write("\n")
