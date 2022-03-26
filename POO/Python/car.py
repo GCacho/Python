@@ -2,4 +2,4 @@ class Car:
     id = int
     license = str
     driver = str
-    passenger = str
+    passegenger = int
