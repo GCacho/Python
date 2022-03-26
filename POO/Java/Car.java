@@ -1,8 +1,8 @@
-class Car{
+class Car {
     Integer id;
     String license;
     Account driver;
-    Integer passenger;
+    Integer passegenger;
 
     public Car(String license, Account driver){
         this.license = license;
@@ -10,6 +10,7 @@ class Car{
     }
 
     void printDataCar() {
-        System.out.println("license: " + license + " Name Diver: " + driver.name);
+        System.out.println("License: " + license + " Name Driver: " + driver.name);
     }
+
 }
