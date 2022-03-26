@@ -1,0 +1,2 @@
+Método constructor -> Es el equivalente a la funcion en POO - Dan un estado inicial al objeto - Tiene el mismo nombre de la clase - Son los praámetros mínimos que necesita el objeto para que pueda vivir
+
