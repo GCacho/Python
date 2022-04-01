@@ -2,7 +2,9 @@
 class Lavadora:
 
     def __init__(self):
-        pass
+        self.color="Blanca"
+        self.capacidad_carga="10 kg"
+        self.tipo="Automática"
 
     def lavar(self, temperatura):
         self._llenar_tanque_de_agua(temperatura)
@@ -26,4 +28,8 @@ if __name__=='__main__':
     lavadora = Lavadora()
     lavadora.lavar("Fría")
     lavadora._anadir_jabon()
+    print(f'Tu lavadora es de color {lavadora.color}')
+    lavadora.color="Negra"
+    print(f'Tu lavadora ahora es de color {lavadora.color}')
+
     
