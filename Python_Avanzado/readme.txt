@@ -27,3 +27,14 @@
 6) Generadores
     Son iteradores sencillos que ayudan a almacenar secuencias infinitas.
     Son lo mismo que los iteradores pero con una sintaxis más sencilla.
+
+7) Sets
+    Son una colección desordenada de elementos únicos e inmutables. (No se repiten y no se pueden modificar.)
+    Funcionan bien para trabajar con teoria de conjuntos.
+    set1.union(set2)
+    set1.symmetric_difference(set2)
+    set1.difference(set2)
+    set1.intersection(set2)
+
+8) Fechas
+    Son fechas sirven pa todo
