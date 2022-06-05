@@ -19,3 +19,18 @@ print(f'Day: {my_day.day}')
 #   %M - Minute
 #   %S - Second
 
+
+fecha = datetime.datetime.now()
+print(fecha)
+
+print("-------------------")
+
+fecha1 = fecha.strftime("%d/%m/%Y")
+print(f'Formato Latam: {fecha1}')
+
+fecha1 = fecha.strftime("%m/%d/%Y")
+print(f'Formato USA: {fecha1}')
+
+fecha1 = fecha.strftime("Estamos en el año %Y")
+print(f'Formato Random: {fecha1}')
+
