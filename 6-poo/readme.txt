@@ -33,3 +33,16 @@ Método constructor -> Es el equivalente a la funcion en POO - Dan un estado ini
 Diagrama y explicacion UML de Uber ---> https://platzi.com/clases/1474-oop/17126-el-diagrama-uml-de-uber/
 
 Decomposición ----> El proceso de descomponer problemas en pequeñas partes para tener más control sobre las piezas 
+
+@Decoradores:
+
+    -Los decoradores permiten extender y modificar el funcionamiento de las funciones.
+    -Los decoradores envuelven a otra función y permiten ejecutar código antes y después de que es llamada.
+
+    def lower_case(func):
+        def wrapper():
+            #execute code before
+            result = func()
+            #execute code after
+            return result
+        return wrapper

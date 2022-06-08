@@ -128,3 +128,13 @@
 
 14-Ejercicio Musical
     -Proyecto que simule un reproductor de musica
+
+15-Comprehensions
+    -Son constructos que nos permiten generar secuencias
+    a partir de otras secuencias.
+        -List Comprehension:
+            -[element for element in element_list if element_meets_condition]
+        -Dictionary Comprehension:
+            -{key: element for element in element_list if element_meets_condition}
+        -Set Comprehension:
+            -{element for element in element_list if element_meets_condition}

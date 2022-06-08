@@ -28,4 +28,4 @@ if __name__ == '__main__': #Sirve para importar modulos.
     encontrado = busqueda_binaria(lista,0,len(lista),objetivo)
 
     print(lista)
-    print(f'El elemento {objetivo} {" esta" if encontrado else "no esta"} en la lista')
+    print(f'El elemento {objetivo} {"esta" if encontrado else "no esta"} en la lista')
